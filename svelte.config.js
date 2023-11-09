@@ -6,6 +6,9 @@ const config = {
   preprocess: vitePreprocess(),
 
   kit: {
+    serviceWorker: {
+      register: false,
+    },
     adapter: adapter({
       fallback: "404.html",
     }),
