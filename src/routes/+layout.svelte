@@ -1,11 +1,9 @@
 <script>
   import { user } from "$lib/stores/user.js";
-  import { posts } from "$lib/stores/posts.js";
   import { onMount } from "svelte";
 
   onMount(async () => {
     user.init();
-    posts.init();
   });
 </script>
 
