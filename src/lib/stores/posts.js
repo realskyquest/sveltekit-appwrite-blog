@@ -14,13 +14,14 @@ async function init() {
   store.set(response.documents);
 }
 
-async function add(title, content) {
+async function add(title, description, content) {
   const response = await databases.createDocument(
     DATABASE_ID,
     COLLECTION_ID,
     ID.unique(),
     {
       title,
+      description,
       content,
       createdAt: new Date().toISOString(),
     }
