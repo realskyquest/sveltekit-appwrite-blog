@@ -85,6 +85,7 @@
             >
           {/if}
           <div id={convertToIdFormat(post.title)} class="collapse">
+            <p class="text-dark">{post.createdAt}</p>
             <p class="text-secondary">{post.content}</p>
           </div>
         </li>
